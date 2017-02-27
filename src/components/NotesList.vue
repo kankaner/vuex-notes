@@ -39,7 +39,7 @@ export default {
     ]),
     methods:{
         toggleShow(show){
-            this.$store.commit('SET_SHOW_ALL',show)
+            this.$store.dispatch('updateShow',show)
         },
         ...mapActions([
             'updateActiveNote',

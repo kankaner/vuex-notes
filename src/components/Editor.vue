@@ -21,7 +21,7 @@ export default {
     },
     methods:{
         updateNote(){
-            this.$store.commit('EDIT_NOTE',this.currentNote)
+            this.$store.dispatch('editNote',this.currentNote)
         },
         ...mapActions([
             'editNote'
